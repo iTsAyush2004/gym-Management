@@ -1,0 +1,66 @@
+/* Basic body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('gymb3.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Dashboard container styling */
+#dashboard {
+    text-align: center;
+}
+
+/* Dashboard heading */
+#dashboard h1 {
+    margin-bottom: 20px;
+    color: #7f7df1f8;
+    font-size: 32px;
+}
+
+/* Container for all dashboard boxes */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+    z-index: 1;
+}
+
+/* Styling for each box */
+.dashboard-box {
+    background-color: #b9fab9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 1;
+}
+
+/* Hover effect for the boxes */
+.dashboard-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading inside each box */
+.dashboard-box h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}

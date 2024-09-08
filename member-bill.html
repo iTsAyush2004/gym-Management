@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Bill Receipt</title>
+    <link rel="stylesheet" href="member-bill.css">
+</head>
+<body>
+    <h1>Your Bill Receipts</h1>
+    <table id="billsTable">
+        <thead>
+            <tr>
+                <th>Bill ID</th>
+                <th>Member Name</th>
+                <th>Amount</th>
+                <th>Bill Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Bills will be dynamically loaded here -->
+        </tbody>
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+    <script src="member-bill.js"></script>
+</body>
+</html>

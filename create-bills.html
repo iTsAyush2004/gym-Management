@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="bill.css">
+    <title>Create Bill Receipt</title>
+    
+</head>
+<body>
+    <h1>Create Bill Receipt</h1>
+    <form id="createBillForm">
+        <input type="text" id="memberID" placeholder="Member ID" required>
+        <input type="text" id="memberName" placeholder="Member Name" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="date" id="billDate" required>
+        <button type="submit">Create Bill</button>
+        <p id="message"></p>
+    </form>
+
+    <h2>Bill Receipts</h2>
+    <table id="billsTable">
+        <thead>
+            <tr>
+                <th>Receipt ID</th>
+                <th>Member ID</th>
+                <th>Member Name</th>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Bills will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+    <script src="bill.js"></script>
+</body>
+</html>
